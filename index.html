@@ -17,6 +17,8 @@
             font-family: "ADLaM Display", serif;
         }
       </style>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- daisyUI & tailwind  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,8 +39,50 @@
       </script>
     
 </head>
-<body>
-    
-    
+<body class="font-sora">
+   <header>
+    <!-- navbar  -->
+    <div>
+        <nav>
+            <div class="navbar bg-bg-header">
+                <div class="navbar-start">
+                  <img src="./images/logo-header.png" alt="">
+                  <a class="text-xl hidden sm:block">Browse<span class="text-btn-accent">4</span>Pets</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex space-x-3">
+                  <i class="fa-regular fa-bell"></i>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <a class="btn border-2 border-btn-accent bg-white px-7 py-2.5">Login</a>
+                  <a class="btn bg-btn-accent px-7 py-2.5">Register</a>
+                </div>
+                <div class="navbar-end lg:hidden">
+                    <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+                </div>
+              </div>
+        </nav>
+    </div>
+    <!-- banner  -->
+    <div class="md:flex px-12">
+        <!-- text-part  -->
+        <div class="md:w-1/2 h-auto">
+            <h4 class="font-adlam text-3xl md:text-5xl mb-4">Pamper Your Pet, Because They Deserve the Best</h4>
+            <p class="text-base md:text-xl mb-4">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="btn bg-btn-accent px-7 py-2.5">Find a pet</button>
+        </div>
+        <!-- image part  -->
+        <div class="md:grow object-cover w-full">
+            <img src="./images/cat-big.png" alt="">
+        </div>
+    </div>
+   </header> 
+
+
 </body>
 </html>
